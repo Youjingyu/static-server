@@ -4,10 +4,11 @@
   "description": "static server based on node.js and express",
   "main": "server.js",
   "scripts": {
-    "server": "node ./server.js"
+    "dev": "node ./app.js"
   },
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "spdy": "^3.4.7"
   },
   "author": "whale",
   "license": "ISC"
