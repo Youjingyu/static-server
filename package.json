@@ -4,9 +4,9 @@
   "description": "static server based on node.js and express",
   "main": "server.js",
   "scripts": {
-    "http": "node ./app.js",
-    "https": "node ./app.js",
-    "http2": "node ./app.js"        
+    "http": "node ./http.js",
+    "https": "node ./https.js",
+    "http2": "node ./http2.js"        
   },
   "dependencies": {
     "express": "^4.15.2",
