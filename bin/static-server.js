@@ -4,7 +4,7 @@ const type = process.argv[2]
 const staticPath = process.argv[3]
 
 if (type === '-v' || type === '--version') {
-  console.log('\x1b[32m', require('../package.json').version, '\x1b[0m')
+  console.log(require('../package.json').version)
   return
 }
 
