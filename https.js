@@ -4,8 +4,8 @@ const express = require('express')
 const staticPath = require('./utils/getStaticPath')()
 
 const options = {
-  key: fs.readFileSync('./certificate/214257203460802.key'),
-  cert: fs.readFileSync('./certificate/214257203460802.pem')
+  key: fs.readFileSync('./certificate/private.pem'),
+  cert: fs.readFileSync('./certificate/ca.cer')
 }
 const port = 8090
 
