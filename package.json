@@ -1,17 +1,30 @@
 {
-  "name": "static-sever",
+  "name": "static-sever-quick",
   "version": "1.0.0",
-  "description": "static server based on node.js and express",
-  "main": "server.js",
+  "description": "create http,https,http2 server to serve static resource files from a local directory",
+  "main": "http.js",
   "scripts": {
-    "http": "node ./http.js",
-    "https": "node ./https.js",
-    "http2": "node ./http2.js"        
+    "http": "node ./bin/static-server.js http",
+    "https": "node ./bin/static-server.js https",
+    "http2": "node ./bin/static-server.js http2"
   },
   "dependencies": {
     "express": "^4.15.2",
     "spdy": "^3.4.7"
   },
-  "author": "whale",
-  "license": "ISC"
+  "keywords": [
+    "static server",
+    "http",
+    "https",
+    "http2"
+  ],
+  "author": "Youjingyu <735284268@qq.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Youjingyu/static-server"
+  },
+  "bin": {
+    "static-server": "./bin/static-server.js"
+  }
 }
