@@ -1,6 +1,7 @@
 const fs = require('fs')
 const spdy = require('spdy')
 const express = require('express')
+const staticPath = require('./utils/getStaticPath')()
 
 const options = {
   key: fs.readFileSync('./certificate/214257203460802.key'),
@@ -9,7 +10,7 @@ const options = {
 const port = 8090
 
 const app = express()
-app.use('/', express.static(''))
+app.use('/', express.static(staticPath))
 
 // https http2 server
 spdy.createServer(options, app)
