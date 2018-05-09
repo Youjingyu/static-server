@@ -1,12 +1,11 @@
-# static-server
-static server based on node.js and express
+# static-server-quick
+create http,https,http2 server to serve static resource files from a local directory
 
-### usage ###
+### usage
 ```bash
-npm i
+npm i static-server-quick -g
+static-server <http|https|http2> path-to-static-source
 ```
-copy your static source to ```./static``` or change the path that express serves on in ```server.js```;
-```bash
-npm run server
-```
-open http://localhost:8090/ + your_source or http://localhost:8090 (if there is a index.html in ```./static```) in browser.
+### for example
+execute ```static-server http2 /user/project/static``` in terminal  
+and then, open http://localhost:8090/index.html in browser(there is an index.html in static directory)
