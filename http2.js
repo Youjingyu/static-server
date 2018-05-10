@@ -1,11 +1,8 @@
-const fs = require('fs')
 const spdy = require('spdy')
 const express = require('express')
+const util = require('./utils')
 
-const options = {
-  key: fs.readFileSync('./certificate/private.pem'),
-  cert: fs.readFileSync('./certificate/ca.cer')
-}
+const options = util.getCerOption()
 const port = 8090
 module.exports = function (staticPath) {
   const app = express()
