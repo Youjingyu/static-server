@@ -1,6 +1,6 @@
 {
   "name": "static-server-quick",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "create http,https,http2 server to serve static resource files from a local directory",
   "main": "http.js",
   "scripts": {
