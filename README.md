@@ -4,7 +4,7 @@ start http,https,http2 server to serve static resource files from a local direct
 ### usage
 ```bash
 npm i static-server-quick -g
-# path should be absolute path to static resource
+# path should be absolute path to static resource directory
 static-server <http|https|http2> <absolute-path>
 ```
 ### for example
