@@ -3,7 +3,7 @@ const express = require('express')
 const util = require('./utils')
 
 const options = util.getCerOption()
-const port = 8090
+const port = 8091
 module.exports = function (staticPath) {
   const app = express()
   app.use('/', express.static(staticPath))
