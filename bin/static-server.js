@@ -14,7 +14,7 @@ const map = {
   http2: '../http2.js'
 }
 const codeToExecute = map[type]
-const error = 'please set server type and source path, for example: static-server https path-to-static-source'
+const error = 'please set server type and source path, for example: static-server https absolute-path-to-resource'
 if (codeToExecute) {
   if (!staticPath) {
     console.log('\x1b[33m', error, '\x1b[0m')
